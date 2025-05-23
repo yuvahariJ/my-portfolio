@@ -1,0 +1,31 @@
+.information-card-wrapper {
+  padding: 1.5rem 2.5rem;
+  width: 300px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  background: var(--lightBlack);
+  border-radius: 12px;
+
+  @media (max-width:768px) {
+    width: calc(100% - 82px);
+  }
+}
+.information-card-wrapper-light {
+  background-color: var(--whiteDirty);
+}
+.information-year {
+  color: var(--greenAcent);
+}
+.information-location-dark {
+  color: var(--whiteDirty);
+}
+.information-location-dark {
+  color: var(--whiteDirty);
+}
+.information-title {
+}
+.info-wrapper {
+  display: flex;
+  gap: 4px;
+}

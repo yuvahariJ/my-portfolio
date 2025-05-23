@@ -1,0 +1,93 @@
+{
+  "resumeContent": [
+    {
+      "navTitle": "Experience",
+      "title": "My Experience",
+      "description": "As a Front-End Developer, I have been actively contributing to the development of an e-commerce platform, focusing on enhancing user experience and optimizing performance. I have worked on key features such as the View Order Details page, product ratings & reviews, and the home screen, ensuring a seamless and intuitive interface. To improve application efficiency, I implemented React Query for optimized data fetching and leveraged lazy loading techniques to enhance performance. Collaborating closely with cross-functional teams, I have played a crucial role in delivering scalable and high-quality front-end solutions that elevate the overall shopping experience.",
+      "cards": [
+        {
+          "year": "2022 -Present",
+          "title": "Front-End Developer",
+          "location": "Accenture, Chennai,India"
+        }
+      ]
+    },
+    {
+      "navTitle": "Education",
+      "title": "My Education",
+      "description": "I have a strong academic background that has laid a solid foundation for my career in Software development",
+      "cards": [
+        {
+          "year": "2018 - 2022",
+          "title": "B.E Computer Science Enginering",
+          "location": "Rajalakshmi Engineering college, Chennai"
+        },
+        {
+          "year": "2017 - 2018",
+          "title": "HSC",
+          "location": "A.R.L.M matriculation higher secondary school"
+        },
+        {
+          "year": "2015 - 2016",
+          "title": "SSLC",
+          "location": "A.R.L.M matriculation higher secondary school, Cuddalore"
+        }
+      ]
+    },
+    {
+      "navTitle": "Skills",
+      "title": "My Skills",
+      "description": "With extensive experience in software development, I specialize in creating responsive, user-friendly interfaces using",
+      "iconCard": [
+        {
+          "title": "HTML",
+          "icon": "Html"
+        },
+        {
+          "title": "Css",
+          "icon": "Css"
+        },
+        {
+          "title": "JavaScript",
+          "icon": "JavaScript"
+        },
+        {
+          "title": "React",
+          "icon": "ReactJs"
+        },
+        {
+          "title": "Next js",
+          "icon": "NextJs"
+        }
+        
+      ]
+    },
+    {
+      "navTitle": "About Me",
+      "title": "About Me",
+      "description": "",
+      "cards": [],
+      "listItems":[
+        {
+          "label":"Name",
+          "value":"J Yuvahari"
+        },
+        {
+          "label":"Experience",
+          "value":"2+ years"
+        },
+        {
+          "label":"Phone",
+          "value":"(+91) 7010693951"
+        },
+        {
+          "label":"Email",
+          "value":"yuvahari.j@gmail.com"
+        },{
+          "label":"Tech",
+          "value":"Full Stack Developer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+
+/* default style*/
+.button-main{
+   background: var(--goldenYellow);
+   min-width: 100px;
+   border-radius: 20px;
+   font-size: 16px;
+   font-weight: 400;
+   height: 35px;
+   padding:12px
+}
+.button-default{
+  border: none; 
+  display: flex;
+   gap: 12px;
+   align-items: center;
+   justify-content: center;
+}
+.button-main:hover{
+    background: var(--goldenbYellowLight);
+}
+
+/* Outline Button */
+.outline{
+    border: 2px solid var(--orange); 
+    background: var(--white);
+    color: var(--orange);
+    max-width: 150px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+ }
+ .outline:hover{
+     background: var(--orange);
+     color: var(--black);
+ }
+
+.outline-black{
+    border: 2px solid var(--orange); 
+    background: var(--black);
+    color: var(--orange);
+    max-width: 150px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+}
+.outline-black:hover{
+  background: var(--orange);
+  color: var(--black);
+}
+
+.icon-button> svg{
+  fill: var(--blueAcent);
+}
+.icon-button> svg:hover{
+  fill: var(--greenAcent);
+}
+.icon-button{
+  width: 35px;
+  height: 35px;
+}
+.icon-button-dark{
+  background: var(--black);
+}
+icon-button-light{
+  background: var(--goldenYellow);
+}

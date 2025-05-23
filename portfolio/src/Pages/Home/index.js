@@ -1,19 +1,21 @@
 "use client"
 
+
 import React from "react";
+import { useTheme } from "@/Context/ThemeProvider/Theme";
+import PageWrapper from "../../Components/PageWrapper";
 import "./index.css";
+import RoundedImage from "../../Components/RoundedImage";
+import Button from "../../Components/Buttons/Button";
 import { FiDownload } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io";
 import { RiLinkedinFill } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
-import PageWrapper from "@/Components/PageWrapper";
-import Button from "@/Components/Buttons/Button";
-import RoundedImage from "@/Components/RoundedImage";
-import { useTheme } from "@/Context/ThemeProvider/Theme";
+import Profile from "./ImageProfile.jpeg"
 
 
 
-export default function Home() {
+const Home = () => {
   const { theme } = useTheme();
   return (
     <PageWrapper>
@@ -41,10 +43,12 @@ export default function Home() {
             </div>
           </div>
           <div className="right-profile-section">
-            <RoundedImage imageSrc="/ImageProfile.jpeg" />
+            <RoundedImage imageSrc={Profile} />
           </div>
         </div>
       </div>
     </PageWrapper>
   );
-}
+};
+
+export default Home;

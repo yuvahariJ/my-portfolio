@@ -1,0 +1,118 @@
+.icon-card-main-wrapper {
+  /* height: 250px; */
+}
+
+.icon-card-wrapper {
+  width: 160px;
+  height: 180px;
+  background: var(--lightBlack);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.icon-card-wrapper:hover {
+  color: var(--greenAcent);
+}
+
+.icon-card-style {
+  fill: var(--white);
+}
+.icon-card-style:hover {
+  fill: var(--greenAcent);
+}
+/* .show-tooltip{
+    display: flex;
+    position: relative;
+    top: -42px;
+    background: var(--white);
+    height: 24px;
+    width: 70px;
+    color: var(--black);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+} */
+.show-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -19px; /* Position below the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  background: var(--white);
+  width: 0;
+  height: 0;
+  border-left: 10px solid var(--black);
+  border-right: 10px solid var(--black);
+  border-top: 10px solid var(--white); /* Change color here */
+  border-bottom: 9px solid var(--black);
+}
+.light.show-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -19px; /* Position below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    background: var(--whiteDirty);
+    width: 0;
+    height: 0;
+    border-left: 10px solid var(--white);
+    border-right: 10px solid var(--white);
+    border-top: 10px solid var(--whiteDirty); /* Change color here */
+    border-bottom: 9px solid var(--white);
+    
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+  }
+.show-tooltip {
+  display: flex;
+  position: relative;
+  top: -20px;
+  background: var(--white);
+  height: 35px;
+  width: 160px;
+  color: var(--black);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+}
+.light.show-tooltip {
+    
+    background: var(--whiteDirty);
+    
+  }
+
+.hide-tooltip {
+  display: flex;
+  height: 35px;
+  content: "";
+}
+
+.icon-card-style-dark {
+}
+.icon-card-style-light:hover {
+    fill:var(--black);
+}
+
+.icon-card-hover {
+  fill: var(--greenAcent);
+}
+.icon-card-hover-light{
+    fill:var(--black);
+}
+.icon-card-title {
+  font-size: 20px;
+}
+.icon-card-wrapper-light{
+    background: var(--whiteDirty);
+}
+.icon-card-wrapper-light:hover{
+    color: var(--black);
+    background: var(--goldenYellow);
+}

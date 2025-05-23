@@ -1,0 +1,45 @@
+.select-div{
+    border: none;
+    width: calc(100% - 1rem);
+    background: var(--black);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    color: var(--white);
+    padding: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-option-warpper{
+    position: relative;
+    background:var(--lightBlack);
+    width: calc(100% - 5rem);
+    margin: 5px 0;
+    border-radius: 12px;
+    padding: 8px;
+    outline: 1px solid var(--greenAcent);
+}
+
+.select-option-hide{
+    display: none;
+}
+.options-dropdown-style{
+    padding: 8px;
+    border-radius: 4px;
+}
+.options-dropdown-style:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.select-placeholder{
+    color: var(--grey);
+}
+.caret-icon-color{
+    color: var(--white);
+}
+.input-container-outline:hover{
+    border: 1px solid var(--greenAcent);
+}

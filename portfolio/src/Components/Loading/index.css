@@ -1,0 +1,129 @@
+
+.loaing-main-div{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+.loading-block{
+    
+    width:100% ;
+
+    animation-name: translateYAnimation ;
+    animation-duration:  2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation: translateYAnimation 2s linear 2s infinite */
+}
+.loading-block-black{
+    background: var(--goldenYellow);
+}
+.loading-block-white{
+    background: var(--black);
+}
+@keyframes translateYAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(70%);
+    }
+    99%{
+        transform: translateY(600%);
+    }
+}
+@keyframes translateYAnimationSix {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99%{
+        transform: translateY(1200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes translateYAnimationFive {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99% {
+        transform: translateY(1000%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes translateYAnimationFour {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99%{
+        transform: translateY(800%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes translateYAnimationThree {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99%{
+        transform: translateY(600%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes translateYAnimationTwo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99%{
+        transform: translateY(400%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes translateYAnimationOne {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    99%{
+        transform: translateY(300%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+    
+}
+
+
+
+

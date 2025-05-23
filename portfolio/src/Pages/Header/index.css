@@ -1,0 +1,22 @@
+.header-main-div{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 16px;
+}
+.left-section{
+
+}
+.right-section{
+    
+}
+
+.period-style{
+    color: var(--greenAcent);
+}
+.link-section{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}

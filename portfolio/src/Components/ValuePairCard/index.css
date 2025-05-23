@@ -1,0 +1,19 @@
+.value-pair-wrapper{
+    display: flex;
+    gap: 12px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: start;
+}
+.label-color{
+    color: var(--whiteDirty-1);
+}
+.value-color{
+    color: var(--white);
+}
+.value-color-light{
+ color: var(--black);
+}
+.label-color-light{
+    color: var(--lightBlack);
+   }

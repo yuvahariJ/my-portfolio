@@ -1,0 +1,24 @@
+.input-style{
+    border: none;
+    width: calc(100% - 1rem);
+    background:var(--black);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    color: var(--white);
+    padding: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-style:focus{
+    outline: 1px solid var(--greenAcent)  ;
+}
+.input-container{
+    width: 100%;
+}

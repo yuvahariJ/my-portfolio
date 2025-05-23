@@ -1,0 +1,35 @@
+.contact-page-wrapper{
+    display: flex;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+.form-conatiner-wrapper{
+    width: 100%;
+}
+.contact-info-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-info-section-card{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.conatact-icon-box{
+    width: 80px;
+    height: 80px;
+    background: var(--lightBlack);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.info-icon-color{
+    fill: var(--goldenYellow);
+}
