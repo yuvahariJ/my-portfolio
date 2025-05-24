@@ -58,6 +58,18 @@
         {
           "title": "Next js",
           "icon": "NextJs"
+        },
+        {
+          "title": "Java",
+          "icon": "Java"
+        },
+        {
+          "title": "SpringBoot",
+          "icon": "SpringBoot"
+        },
+        {
+          "title": "MySql",
+          "icon": "MySql"
         }
         
       ]

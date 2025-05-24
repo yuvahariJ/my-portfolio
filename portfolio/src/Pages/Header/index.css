@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4px 16px;
+    margin: 0px 16px 4px 16px;
 }
 .left-section{
 
@@ -19,4 +19,35 @@
     display: flex;
     gap: 16px;
     align-items: center;
+}
+.links-style,.buttons-style{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    
+}
+
+@media (max-width:600px){
+    .link-section{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.header-main-div{
+    height: auto;
+}
+.left-section{
+    display: none;
+}
+.right-section{
+    width: 100%;
+}.buttons-style{
+    justify-content: space-between;
+}
+.links-style{
+justify-content: center;
+}
 }

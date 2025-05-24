@@ -21,12 +21,18 @@ const Header = () => {
                 </div>
                 <div className="right-section">
                     <div className="link-section">
-                        <Link label="Home" href="/" />
+                        <div className="links-style">
+                             <Link label="Home" href="/" />
                         <Link label="Resume" href="/resume" />
                         <Link label="Work" href="/work"/>
                         <Link label="Contact" href="/contact" />
-                        <Button label="Hire Me" />
+                        </div>
+                        <div className="buttons-style">
+                            <Button label="Hire Me" />
                         <ToggleButton onChange={ ()=>toggleTheme()} />
+                        </div>
+                       
+                        
                     </div>
                     
                 </div>

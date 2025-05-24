@@ -6,6 +6,9 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
+import { FaJava } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 
 export  const IconsMap = {
     Html: FaHtml5 ,
@@ -15,5 +18,9 @@ export  const IconsMap = {
     NextJs: RiNextjsFill,
     Phone: FaPhoneAlt,
     Email: MdEmail,
-    Location:IoLocation,
+    Location: IoLocation,
+    Java: FaJava,
+    SpringBoot: BiLogoSpringBoot,
+    MySql:SiMysql,
+    
 }
