@@ -11,10 +11,20 @@ import Button from "@/Components/Buttons/Button";
 import RoundedImage from "@/Components/RoundedImage";
 import { useTheme } from "@/Context/ThemeProvider/Theme";
 
-
+const phoneNumber="917010693951"
 
 export default function Home() {
   const { theme } = useTheme();
+
+  const handleLinkedInClick = () => {
+    window.open(`https://linkedin.com/in/yuvahari-j-81985319b `, "_blank");
+  };
+  const handleGitHubClick = () => {
+    window.open(`https://github.com/yuvahariJ `, "_blank");
+  };
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
   return (
     <PageWrapper>
       <div className={theme ? "dark-theme" : "light-theme"}>
@@ -24,7 +34,7 @@ export default function Home() {
             <h1 className="greetings">Hello I'm</h1>
             <h1 className={`name-content ${theme?"heading-dark":"heading-light"}`}>Yuvahari . J</h1>
             <h3>
-              Highly motivated software developer with 1.5+ years of experience
+              Highly motivated software developer with 2.5+ years of experience
               specializing in full-stack development and modern web
               technologies. Proficient in building scalable and maintainable
               applications using React, Next.js, and Java. Skilled in
@@ -33,9 +43,9 @@ export default function Home() {
             <div className="contact-section-homePage">
               
               <Button label="Download" type="outline" leadingIcon={<FiDownload />} />
-              <Button leadingIcon={<IoLogoGithub size={20} />} type="icon-button" />
-              <Button leadingIcon={<RiLinkedinFill size={20} />} type="icon-button" />
-              <Button leadingIcon={<FaWhatsapp size={20} />} type="icon-button" />
+              <Button onClick={ handleGitHubClick} leadingIcon={<IoLogoGithub size={20} />} type="icon-button" />
+              <Button onClick={handleLinkedInClick} leadingIcon={<RiLinkedinFill size={20} />} type="icon-button" />
+              <Button onClick={handleWhatsAppClick} leadingIcon={<FaWhatsapp size={20} />} type="icon-button" />
               
               
             </div>

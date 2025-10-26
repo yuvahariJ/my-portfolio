@@ -28,8 +28,8 @@ const Header = () => {
                         <Link label="Contact" href="/contact" />
                         </div>
                         <div className="buttons-style">
-                            <Button label="Hire Me" />
-                        <ToggleButton onChange={ ()=>toggleTheme()} />
+                            {/* <Button label="Hire Me" /> */}
+                        {/* <ToggleButton onChange={ ()=>toggleTheme()} /> */}
                         </div>
                        
                         

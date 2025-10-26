@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import TextInput from "../TextInput";
 import "./index.css";
@@ -5,7 +7,7 @@ import DropDown from "../DropDown";
 import TextArea from "../TextArea";
 import Button from "../Buttons/Button"; 
 
-const getInputField = (filedDetails) => {
+const getInputField = (filedDetails, handleChange, formData) => {
   switch (filedDetails?.type) {
     case "text":
     case "number":
@@ -15,6 +17,8 @@ const getInputField = (filedDetails) => {
           placeholder={filedDetails?.label}
           name={filedDetails?.name}
           type={filedDetails?.type}
+          handleChange={handleChange}
+          value={formData[formData]??""}
         />
       );
     case "dropDown":
@@ -23,18 +27,24 @@ const getInputField = (filedDetails) => {
           label={filedDetails?.label}
           options={filedDetails?.options}
           placeholder={filedDetails?.placeholder}
+          handleChange={handleChange}
+          name={filedDetails?.name}
+          value={formData[formData]??""}
         />
       )
     case "textArea":
       return (
         <TextArea
-         placeholder={filedDetails?.placeholder}
+          placeholder={filedDetails?.placeholder}
+          handleChange={handleChange}
+          name={filedDetails?.name}
+          value={formData[formData]??""}
         />
       )
     case "button":
       return (
         <div>
-          <Button label={filedDetails?.label} />
+          <Button label={filedDetails?.label} onClick={ filedDetails?.onClick} />
           </div>
       )
     default:
@@ -42,7 +52,7 @@ const getInputField = (filedDetails) => {
   }
 };
 const DynamicForm = (props) => {
-  const { formFields ,heading} = props;
+  const { formFields ,heading,handleChange,formData} = props;
   return (
     <div className={`dynamic-form-main-wrapper`}>
       <div className={`dynamic-form-heading-wrapper`}>
@@ -55,7 +65,7 @@ const DynamicForm = (props) => {
             <div className={`form-container-wrapper`}>
               {fields?.fields?.map((field) => {
 
-                return getInputField(field);
+                return getInputField(field,handleChange,formData);
               })}
             </div>
           </>

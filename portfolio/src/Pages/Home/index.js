@@ -23,7 +23,7 @@ const Home = () => {
         <div className="content-main">
           <div className="left-profile-section">
             <h3>SoftWare Developer</h3>
-            <h1 className="greetings">Hello I'm</h1>
+            <h1 className="greetings">Hello I&apos;m</h1>
             <h1 className={`name-content ${theme?"heading-dark":"heading-light"}`}>Yuvahari . J</h1>
             <h3>
               Highly motivated software developer with 1.5+ years of experience
